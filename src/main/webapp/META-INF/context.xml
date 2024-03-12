@@ -1,0 +1,11 @@
+<!-- src/main/webapp/META-INF/context.xml -->
+
+<Context>
+    <!-- Your context configurations go here -->
+    <Resource name="jdbc/MyDataSource" auth="Container" type="javax.sql.DataSource"
+              maxTotal="100" maxIdle="30" maxWaitMillis="10000"
+              username="yourdbusername" password="yourdbpassword"
+              driverClassName="com.mysql.cj.jdbc.Driver"
+              url="jdbc:mysql://localhost:3306/yourdatabase"/>
+</Context>
+
